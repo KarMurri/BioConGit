@@ -1,0 +1,11 @@
+commit b7dcbc25b138d927ab215c6213a08f9ed84fc355
+Author: Karen Murrieta <karenmurrieta@live.com>
+Date:   Mon Jun 26 16:36:05 2017 -0500
+
+    Agregamos archivo log de commits
+
+commit 7b6f67e364b92ef4dcc290c1f9485780835c396e
+Author: Karen Murrieta <karenmurrieta@live.com>
+Date:   Mon Jun 26 16:23:01 2017 -0500
+
+    Página casi lista, falta corregir estilos y poner carousel
