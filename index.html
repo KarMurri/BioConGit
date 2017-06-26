@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Portafolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="js/index.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="icon" type ="image/png" href="img/FOOD.png"> <!-- REMPLAZAR POR EL LOGO QUE HICE CON MIS INICIALES -->
+
+
+    <style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	}
+  	</style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#myPage" class="navbar-brand">Más sobre Karen</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#quien">¿Quien soy?</a></li>
+					<li><a href="#videos">Mis aventuras</a></li>
+					<li><a href="#contacto">Contáctame</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--Primera descripcion-->
+	<div id="intro" class="container bg-1 text-center">
+		<h1>¿Qué es Karen?</h1>
+		<img src="img/quien_soy.JPG" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="15%" height="30%">
+		<h2>Si tuviera que desribirme en una palabra seria: </h2><h1><strong>A  V E N T U R E R A</strong></h1>
+	</div>
+	<!--Más sobre mi-->
+	<div id="quien" class="container bg-2 text-center">
+		<h1>¿Quién soy?</h1>
+		<img src="img/plane128.png" class="img-responsive margin" style="display: inline" alt="Image">
+		<p>Soy una chava bien divertida, me encanta viajar para conocer nuevos lugares. <br>
+		También soy programadora, mi hit es el FrontEnd pero conozco más lenguajes de programación. <br>
+		El propósito de esta página es dar a conocer mis habilidades de programación reflejadas en lo que más me gusta hacer... <strong>¡VIAJAR!...</strong><br>
+		Cuando viajo me encanta tomar fotos y después hacer mis videos sobre mi experiencia los cuales después comparto en mi redes sociales, con esta página haré un portafolio de tales videos.</p>
+	</div>
+	<!--Carrousel-->
+	<div id="videos" class="container bg-1 text-center">
+		<h1>Mis aventuras</h1><br><br>
+		<!--<img src="img/plane-tickets.png" class="img-responsive margin" style="display: inline" alt="Bird">-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item-video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="item">
+					<img src="img/plane128.png">
+					<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>-->
+				</div>
+				<div class="item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Ant.</span>
+			</a>
+
+			<a class="right carousel-control" href="#myCarousel" data-slide="netx">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Sig.</span>
+			</a>
+		</div>
+	</div>
+	<!--Contacto-->
+	<div id="contacto" class="container text-center">
+		<h1>Contactame</h1>
+		<img src="img/contact128.png" class="img-responsive margin" style="display: inline;" alt="Image">
+		<p style="font-size: 1.1em; color: #000000;">Si te gustó lo que viste, ¡Escribeme algo!</p>
+
+		<div class="row container-fluid">
+			<div class="col-sm-3 contact">
+				<!--<p><span class="glyphicon glyphicon-map-marker"></span> Ubicación: Xalapa,ver</p>-->
+				<i class="fa fa-map-marker" aria-hidden="true"> Ubicación: Xalapa,Ver.</i><br><br>
+				<i class="fa fa-envelope" aria-hidden="true"> Correo: karenmurrieta@live.com</i><br>
+				<p><a href="https://www.twitter.com/KarMurri" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> KarMurri</i></a></p>
+				<p><a href="https://www.youtube.com/channel/UC4PPsVSvO6LddsYvXvAtFdQ" target="_blank"><i class="fa fa-youtube" aria-hidden="true">Karen Murrieta</i></a></p>
+			    <!--<span class="glyphicon glyphicon-envelope"></span> Correo: karenmurrieta@live.com-->
+			</div>
+
+			<div class="row col-sm-3">
+				<div align="left">
+					<input  type="text" name="name" placeholder="Nombre" id="name" class="form-group" required>
+					<div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Commentarios" rows="3"></textarea>	
+					</div>
+				</div>
+				<div class="row col-md-3"><br>
+					<button class="btn" type="submit">Send</button>
+				</div>				
+			</div>
+			<!--Mapa-->
+			<div class="col-md-6">
+				<div id="googleMap"></div>
+				<script>
+					function myMap() {
+					  var myCenter = new google.maps.LatLng(19.460205, -96.785478);
+					  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+					  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					  var marker = new google.maps.Marker({position:myCenter});
+					  marker.setMap(map);
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACXR6Ake4aU0zg9qcO4yYd7UZdkcoYEF0&callback=myMap">
+				</script>
+			</div>				
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="text-center">
+	<div>
+		<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  	</a><br>
+	  	<p>Volver arriba</p>
+	</div>
+	</footer>
+</body>
+</html>
