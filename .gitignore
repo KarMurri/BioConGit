@@ -1,5 +1,5 @@
-# Compile source #
-##################
+# Compiled source #
+# #################
 *.com
 *.class
 *.dll
@@ -7,9 +7,9 @@
 *.o
 *.so
 *.sh
-
-# Packages #
-############
+ 
+#  Packages #
+#############
 *.7z
 *.dmg
 *.gz
@@ -30,6 +30,7 @@
 .DS_Store
 .DS_Store?
 ._*
+.Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
