@@ -15,7 +15,13 @@
   	<link rel="icon" type ="image/png" href="img/FOOD.png"> <!-- REMPLAZAR POR EL LOGO QUE HICE CON MIS INICIALES -->
 
 
-
+    <style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	}
+  	</style>
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -54,7 +60,7 @@
 		El propósito de esta página es dar a conocer mis habilidades de programación reflejadas en lo que más me gusta hacer... <strong>¡VIAJAR!...</strong><br>
 		Cuando viajo me encanta tomar fotos y después hacer mis videos sobre mi experiencia los cuales después comparto en mi redes sociales, con esta página haré un portafolio de tales videos.</p>
 	</div>
-	<!--Carousel-->
+	<!--Carrousel-->
 	<div id="videos" class="container bg-1 text-center">
 		<h1>Mis aventuras</h1><br><br>
 		<!--<img src="img/plane-tickets.png" class="img-responsive margin" style="display: inline" alt="Bird">-->
@@ -66,25 +72,25 @@
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<!--<img class="first-slide" src="img/plane128.png" alt="First slide">-->
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/NeVWN_9KB5E" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="item">					
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/rBduVKcrwQY" frameborder="0" allowfullscreen></iframe>
+			<div class="carousel-inner">
+				<div class="item-video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="item">
-					<img class="img-responsive" style="display: inline;" src="img/proximamente.png" alt="Second slide">
+					<img src="img/plane128.png">
+					<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>-->
+				</div>
+				<div class="item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nfs8NYg7yQM" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span>
 				<span class="sr-only">Ant.</span>
 			</a>
 
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="netx">
+			<a class="right carousel-control" href="#myCarousel" data-slide="netx">
 				<span class="glyphicon glyphicon-chevron-right"></span>
 				<span class="sr-only">Sig.</span>
 			</a>
@@ -99,14 +105,14 @@
 		<div class="row container-fluid">
 			<div class="col-sm-3 contact">
 				<!--<p><span class="glyphicon glyphicon-map-marker"></span> Ubicación: Xalapa,ver</p>-->
-				<i class="fa fa-map-marker" aria-hidden="true"> Ubicación: Xalapa,Ver.</i><br><br>				
-				<p><a href="mailto:karenmurrieta@live.com"><i class="fa fa-envelope" aria-hidden="true"> Correo Electrónico  </i></a></p>
+				<i class="fa fa-map-marker" aria-hidden="true"> Ubicación: Xalapa,Ver.</i><br><br>
+				<i class="fa fa-envelope" aria-hidden="true"> Correo: karenmurrieta@live.com</i><br>
 				<p><a href="https://www.twitter.com/KarMurri" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> KarMurri</i></a></p>
 				<p><a href="https://www.youtube.com/channel/UC4PPsVSvO6LddsYvXvAtFdQ" target="_blank"><i class="fa fa-youtube" aria-hidden="true">Karen Murrieta</i></a></p>
 			    <!--<span class="glyphicon glyphicon-envelope"></span> Correo: karenmurrieta@live.com-->
 			</div>
 
-			<!--<div class="row col-sm-3">
+			<div class="row col-sm-3">
 				<div align="left">
 					<input  type="text" name="name" placeholder="Nombre" id="name" class="form-group" required>
 					<div>
@@ -116,7 +122,7 @@
 				<div class="row col-md-3"><br>
 					<button class="btn" type="submit">Send</button>
 				</div>				
-			</div>-->
+			</div>
 			<!--Mapa-->
 			<div class="col-md-6">
 				<div id="googleMap"></div>
@@ -141,7 +147,6 @@
 	    <span class="glyphicon glyphicon-chevron-up"></span>
 	  	</a><br>
 	  	<p>Volver arriba</p>
-	  	<p align="right" >Karen Murrieta</p>
 	</div>
 	</footer>
 </body>
