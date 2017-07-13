@@ -21,23 +21,10 @@ body {
   .person:hover {
       border-color: #f1f1f1;
   }
-  .carousel-inner img {
-      -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
+
   .bg-1 {
-      background: #2d2d30;
-      color: #bdbdbd;
+      background: #2B3A42;
+      color: #EFEFEF;
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -91,17 +78,17 @@ body {
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
-      background-color: #2d2d30;
+      background-color: #EFEFEF;
       border: 0;
       font-size: 11px !important;
       letter-spacing: 4px;
       opacity: 0.9;
   }
   .navbar li a, .navbar .navbar-brand { 
-      color: #d5d5d5 !important;
+      color: #FF530D !important;
   }
   .navbar-nav li a:hover {
-      color: #fff !important;
+      color: #3F5765 !important;
   }
   .navbar-nav li.active a {
       color: #fff !important;
@@ -144,12 +131,33 @@ textarea {
 }
 
 .bg-2 { 
-  background-color: #474e5d; /* Dark Blue */
+  background-color: #3F5765; /* Dark Blue */
   color: #ffffff;
+}
+
+.bg-3{
+  background-color: #EFEFEF;
 }
 
 .contact{
   color: #000000;
   font-size: 1.2em;
   text-align: left;
+}
+
+
+.rotateMe {
+ -webkit-transition: -webkit-transform 1s ease-out;
+ -moz-transition: -moz-transform 1s ease-out;
+ transition: transform 1s ease-out;
+}
+.rotateMe:hover {
+ -webkit-transform: rotate(360deg);
+ -moz-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+
+.contact{
+  color: #444445;
+ font-size: 1.1em; 
 }
