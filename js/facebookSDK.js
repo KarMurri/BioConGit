@@ -20,9 +20,9 @@ window.fbAsyncInit = function() {
     //
     // These three cases are handled in the callback function.
 
-    FB.getLoginStatus(function(response) {
+    /*FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
-    });
+    });*/
 };
 
 // This function is called when someone finishes with the Login
@@ -57,7 +57,7 @@ function statusChangeCallback(response) {
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name + ',with mail: '+response.mail);
+      console.log('Successful login for: ' + response.name + ',with mail: '+response.email);
       alert('Thanks for logging in, ' + response.name + '!');
     });
 }
