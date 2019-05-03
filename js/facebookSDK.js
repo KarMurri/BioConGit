@@ -57,7 +57,7 @@ function statusChangeCallback(response) {
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
+      console.log('Successful login for: ' + response.name + ',with mail: '+response.mail);
       alert('Thanks for logging in, ' + response.name + '!');
     });
 }
