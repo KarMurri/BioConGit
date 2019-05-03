@@ -9,6 +9,8 @@ window.fbAsyncInit = function() {
     });
 };
 
+var FB = window.FB;
+
 FB.login(function(response) {
   checkLoginState();
 }, {scope: 'email'});
