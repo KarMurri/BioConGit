@@ -12,16 +12,6 @@ window.fbAsyncInit = function() {
 var FB = window.FB;
 
 FB.login(function(response) {
-  checkLoginState();
-}, {scope: 'email'});
-
-function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
-    });
-}
-
-function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
     // The response object is returned with a status field that lets the
@@ -35,7 +25,7 @@ function statusChangeCallback(response) {
       // The person is not logged into your app or we are unable to tell.
       alert('Por favor inicie sesi&oacute');
     }
-}
+}, {scope: 'email',return_scopes: true});
 
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
