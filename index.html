@@ -56,7 +56,12 @@
 					<li><a href="#quien">¿Quien soy?</a></li>
 					<li><a href="#videos">Mis aventuras</a></li>
 					<li><a href="#contacto">Contáctame</a></li>
-					<li><div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div></li>
+					<li>
+						<!--div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false">
+						</div-->
+						<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+						</fb:login-button>
+					</li>
 				</ul>
 			</div>
 		</div>
